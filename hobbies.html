@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * { color: #FFFDD0 !important; }
+        a { text-decoration: none; }
+        a:hover { opacity: 0.8; }
+    </style>
+    <style>
+        /* Flip Card Styles */
+        .flip-card {
+            perspective: 1000px;
+            height: 400px;
+            cursor: pointer;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            background: rgba(26, 26, 26, 0.9);
+            padding: 1rem;
+        }
+
+        .flip-card-back {
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .flip-card-back p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #FFFDD0;
+        }
+
+        .hobbies-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hobby-card {
+            background: #242424;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hobby-card h3 {
+            color: #8ba3ff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hobby-content {
+            margin-top: 1rem;
+            padding: 0.5rem;
+        }
+
+        .hobby-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .hobby-item {
+            padding: 1rem;
+            background: #1a1a1a;
+            border-radius: 5px;
+        }
+        
+        .media-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .gallery-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            flex: 0 0 300px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="career-interests.html">Career Interests</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="interactive-game.html">Interactive Game</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Navigation styles moved to main style.css -->
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Hobbies & Activities</h1>
+            <p>What I Do Beyond Professional Life</p>
+        </section>
+
+        <section class="media-section">
+            <h2 class="section-title">Activity Highlights</h2>
+            <div class="media-grid">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="media-placeholder" style="height: 250px;">
+                                [Sports Photo]
+                            </div>
+                            <div class="media-content">
+                                <h3 class="media-title">Athletic Achievements</h3>
+                                <p class="media-description">Varsity Soccer Captain, Tennis, Track, and Powerlifting</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="media-title">Athletic Journey</h3>
+                            <p>Throughout my athletic career, I've demonstrated leadership and dedication across multiple sports. As Varsity Soccer Captain, I led our team to the state championships while maintaining a perfect academic record. My passion for powerlifting has driven me to achieve national rankings, showcasing my commitment to excellence and continuous improvement. These experiences have taught me invaluable lessons in discipline, teamwork, and perseverance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="media-placeholder" style="height: 250px;">
+                                [Community Service]
+                            </div>
+                            <div class="media-content">
+                                <h3 class="media-title">Volunteer Work</h3>
+                                <p class="media-description">Youth Leader, Blood Donor, and Soccer Coach</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="media-title">Community Impact</h3>
+                            <p>My commitment to community service extends beyond occasional volunteering. As a youth soccer coach, I've mentored young athletes, helping them develop both athletic skills and character. Regular blood donation has been my way of directly contributing to saving lives. Through these activities, I've learned the importance of giving back and the profound impact that consistent community involvement can have on both the helper and those being helped.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="media-placeholder" style="height: 250px;">
+                                [Leadership]
+                            </div>
+                            <div class="media-content">
+                                <h3 class="media-title">Leadership Roles</h3>
+                                <p class="media-description">Team Captain and Youth Mentor experiences</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="media-title">Leadership Experience</h3>
+                            <p>Leadership has been a central theme in my personal development. As a team captain, I learned to motivate and inspire others while maintaining high performance standards. My role as a youth mentor has allowed me to share knowledge and guidance with the next generation, teaching valuable life skills through sports. These experiences have shaped my leadership style, emphasizing empathy, clear communication, and leading by example.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="media-gallery">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 2rem; color: #8ba3ff;">Athletics</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="media-placeholder">
+                        <img src="./media/leadership.jpeg" alt="Soccer Moments" class="media-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="media-placeholder">
+                        <img src="./media/af.jpeg" alt="Tennis Matches" class="media-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="media-placeholder">
+                        <img src="./media/holmen.jpeg" alt="Powerlifting Events" class="media-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="media-placeholder">
+                        <img src="./media/volunteer.jpeg" alt="Volunteer Activities" class="media-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hobbies-section">
+            <div class="hobby-card">
+                <h3>Sports & Fitness</h3>
+                <div class="hobby-content">
+                    <p>Staying active and maintaining a healthy lifestyle</p>
+                    <div class="hobby-grid">
+                        <div class="hobby-item">
+                            <h4>Soccer</h4>
+                            <p>Retired Varsity Soccer Captain | Now balling the Intramural Leagues.</p>
+                        </div>
+                        <div class="hobby-item">
+                            <h4>Powerlifting</h4>
+                            <p>Nationally ranked competitor, 34th in the nation in 2024.</p>
+                        </div>
+                        <div class="hobby-item">
+                            <h4>Referee</h4>
+                            <p>Certified in US Soccer officiating.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hobby-card">
+                <h3>Technology & Gaming</h3>
+                <div class="hobby-content">
+                    <p>Exploring new technologies</p>
+                    <div class="hobby-grid">
+                        <div class="hobby-item">
+                            <h4>Programming</h4>
+                            <p>Building financial analysis tools with Python.</p>
+                        </div>
+                        <div class="hobby-item">
+                            <h4>Clash Royale</h4>
+                            <p>10,000 Trophy player, will beat you.</p>
+                        </div>
+                        <div class="hobby-item">
+                            <h4>Computer Building</h4>
+                            <p>Creating custom PCs for gaming and productivity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hobby-card">
+                <h3>Reading & Learning</h3>
+                <div class="hobby-content">
+                    <p>Continuous personal development through reading</p>
+                    <div class="hobby-grid">
+                        <div class="hobby-item">
+                            <h4>Financial Literature</h4>
+                            <p>Favorite books include "The Intelligent Investor" Vol III By Benjamin Graham, and The Finite Game by James P. Carse.</p>
+                        </div>
+                        <div class="hobby-item">
+                            <h4>Powerlifting and Bodybuilding</h4>
+                            <p>Dedicated to strength training and fitness, regularly participating in competitions.</p>
+                        </div>
+                        <div class="hobby-item">
+                            <h4>Entrepreneurship</h4>
+                            <p>Passionate about exploring new business ideas and building profitable ventures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Will Drazkowski. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

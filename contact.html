@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * { color: #FFFDD0 !important; }
+        a { text-decoration: none; }
+        a:hover { opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="career-interests.html">Career Interests</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="interactive-game.html">Interactive Game</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Navigation styles moved to main style.css -->
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Contact Me</h1>
+            <p>Let's work together!</p>
+        </section>
+
+        <section class="media-section">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="media-grid">
+                <div class="media-item">
+                    <div class="media-placeholder">
+                        [LinkedIn Profile]
+                    </div>
+                    <div class="media-content">
+                        <h3 class="media-title">LinkedIn</h3>
+                        <p class="media-description">Professional networking and updates</p>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <div class="media-placeholder">
+                        [Email Contact]
+                    </div>
+                    <div class="media-content">
+                        <h3 class="media-title">Email</h3>
+                        <p class="media-description">Direct communication channel</p>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <div class="media-placeholder">
+                        [Business Card]
+                    </div>
+                    <div class="media-content">
+                        <h3 class="media-title">Business Card</h3>
+                        <p class="media-description">Professional contact information</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="feature-card">
+                <h3>Get in Touch</h3>
+                <form>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" style="width: 100%; padding: 8px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" style="width: 100%; padding: 8px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="linkedin">LinkedIn Username:</label><br>
+                        <div style="display: flex; align-items: center;">
+                            <span style="color: #b0b0b0; padding: 8px; background: #1a1a1a; border-radius: 5px 0 0 5px; border: 1px solid #333; border-right: none;">linkedin.com/in/</span>
+                            <input type="text" id="linkedin" name="linkedin" style="width: 100%; padding: 8px; border-radius: 0 5px 5px 0;" placeholder="username">
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" style="width: 100%; padding: 8px;"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

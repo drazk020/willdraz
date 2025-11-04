@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Will Drazkowski</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * { color: #FFFDD0 !important; }
+        a { text-decoration: none; }
+        a:hover { opacity: 0.8; }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .resume-section {
+            background: rgba(26, 26, 26, 0.9);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(128, 0, 0, 0.3);
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .resume-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #FFFDD0;
+        }
+
+        .resume-header .contact-info {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(128, 0, 0, 0.5);
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+        }
+
+        .experience-item h3, .education-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .experience-item .position, .education-item .degree {
+            font-size: 1.2rem;
+            color: #8ba3ff;
+            margin-bottom: 8px;
+        }
+
+        .experience-item .date, .education-item .date {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .experience-item ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .experience-item li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .experience-item li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: rgba(128, 0, 0, 0.8);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            margin-bottom: 20px;
+        }
+
+        .skill-category h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #8ba3ff;
+        }
+
+        .skill-category ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skill-category li {
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .skill-category li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: rgba(128, 0, 0, 0.8);
+        }
+
+        @media (max-width: 768px) {
+            .resume-container {
+                padding: 15px;
+            }
+
+            .resume-header h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="career-interests.html">Career Interests</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="interactive-game.html">Interactive Game</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Navigation styles moved to main style.css -->
+        </div>
+    </header>
+
+    <main class="resume-container">
+        <div class="resume-header resume-section">
+            <h1>Will Drazkowski</h1>
+            <div class="contact-info">
+                <p>(608)-518-8996 | willdraz12@gmail.com</p>
+                <p>Duluth, MN | Financial Markets Major</p>
+            </div>
+        </div>
+
+        <section class="media-section">
+            <h2 class="section-title">Professional Portfolio</h2>
+            <div class="media-grid" style="display: flex; flex-direction: column; gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                <div class="media-item" style="display: flex; gap: 2rem; align-items: center; background: rgba(26, 26, 26, 0.6); padding: 1.5rem; border-radius: 10px;">
+                    <div class="media-placeholder" style="flex: 0 0 300px; height: 300px; border-radius: 8px; overflow: hidden; background: rgba(26, 26, 26, 0.8);">
+                        <img src="./media/profilephoto.jpg" alt="Will Drazkowski Professional Profile" class="media-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%;">
+                    </div>
+                    <div class="media-content" style="flex: 1;">
+                        <h3 class="media-title" style="font-size: 1.5rem; margin-bottom: 1rem; color: #8ba3ff;">Professional Profile</h3>
+                        <p class="media-description" style="font-size: 1.1rem; line-height: 1.8;">Financial Markets student at UMD with a passion for data analysis and investment strategies. Experienced in property management, sales, and customer service roles, demonstrating strong analytical and interpersonal skills.</p>
+                    </div>
+                </div>
+                <div class="media-item" style="display: flex; gap: 2rem; align-items: center; background: rgba(26, 26, 26, 0.6); padding: 1.5rem; border-radius: 10px;">
+                    <div class="media-placeholder" style="flex: 0 0 300px; height: 300px; background: rgba(26, 26, 26, 0.8); border-radius: 8px; display: flex; flex-direction: column; justify-content: center;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="color: #8ba3ff; font-size: 1.2rem; margin-bottom: 1rem; text-align: center;">Work Experience</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #8ba3ff;">→</span>
+                                    Property Manager at AD Investments LLC
+                                </li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #8ba3ff;">→</span>
+                                    Sales Associate at Tradehome Shoes
+                                </li>
+                                <li style="padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #8ba3ff;">→</span>
+                                    Team Member at Burrachos
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="media-content" style="flex: 1;">
+                        <h3 class="media-title" style="font-size: 1.5rem; margin-bottom: 1rem;">Career Highlights</h3>
+                        <p class="media-description" style="font-size: 1.1rem; line-height: 1.6;">Diverse experience in property management, retail sales, and customer service roles, demonstrating adaptability and strong interpersonal skills.</p>
+                    </div>
+                </div>
+                <div class="media-item" style="display: flex; gap: 2rem; align-items: center; background: rgba(26, 26, 26, 0.6); padding: 1.5rem; border-radius: 10px;">
+                    <div class="media-placeholder" style="flex: 0 0 300px; height: 300px; background: rgba(26, 26, 26, 0.8); border-radius: 8px; display: flex; flex-direction: column; justify-content: center;">
+                        <div style="padding: 1.5rem;">
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #8ba3ff;">→</span>
+                                    Microsoft Excel - Data Analysis & Modeling
+                                </li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #8ba3ff;">→</span>
+                                    Microsoft Office Suite Professional
+                                </li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #8ba3ff;">→</span>
+                                    Wall Street Prep Financial Modeling
+                                </li>
+                                <li style="padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #8ba3ff;">→</span>
+                                    Red Cross CPR/AED Certification
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="media-content" style="flex: 1;">
+                        <h3 class="media-title" style="font-size: 1.5rem; margin-bottom: 1rem; color: #8ba3ff;">Professional Certifications</h3>
+                        <p class="media-description" style="font-size: 1.1rem; line-height: 1.8;">Comprehensive certification portfolio focusing on financial analysis, data modeling, and professional software proficiency. Demonstrates strong commitment to technical excellence and continuous professional development in the financial sector.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="resume-section">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-item">
+                <h3>University of Minnesota-Duluth</h3>
+                <div class="degree">Financial Markets Major</div>
+                <div class="details">
+                    <p>Cumulative GPA: 3.5</p>
+                    <ul>
+                        <li>Investment Club (UMD)</li>
+                        <li>Sales Club (UMD)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <h3>Onalaska High School</h3>
+                <div class="details">
+                    <p>GPA: 3.67</p>
+                    <ul>
+                        <li>5 AP Courses</li>
+                        <li>9 Honors Courses</li>
+                        <li>Finance Challenge Bowl Champion</li>
+                        <li>8th Place State FBLA (Securities and Investments)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <h3>Professional Certifications</h3>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: #8ba3ff;">Microsoft Excel Certification</strong>
+                        <p style="margin: 0.3rem 0;">Advanced Data Analysis & Financial Modeling specialization, focusing on complex financial calculations and data visualization</p>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: #8ba3ff;">Microsoft Office Professional</strong>
+                        <p style="margin: 0.3rem 0;">Comprehensive certification in PowerPoint and Word, demonstrating expertise in professional documentation and presentation design</p>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: #8ba3ff;">Wall Street Prep Financial Modeling</strong>
+                        <p style="margin: 0.3rem 0;">Advanced certification in financial modeling and valuation techniques used by investment banking professionals</p>
+                    </li>
+                    <li>
+                        <strong style="color: #8ba3ff;">Red Cross Safety Certification</strong>
+                        <p style="margin: 0.3rem 0;">CPR and AED certification for emergency response and workplace safety</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-item">
+                <h3>AD Investments LLC</h3>
+                <div class="position">Property Manager/Bookkeeper</div>
+                <div class="date">May 2025 - Present</div>
+            </div>
+            <div class="experience-item">
+                <h3>Tradehome Shoes</h3>
+                <div class="position">Sales Associate</div>
+                <div class="date">August 2025 - Present</div>
+            </div>
+            <div class="experience-item">
+                <h3>Burrachos</h3>
+                <div class="position">Team Member</div>
+                <div class="date">August 2023 - 2025</div>
+            </div>
+            <div class="experience-item">
+                <h3>Youth Soccer</h3>
+                <div class="position">Coach</div>
+                <div class="date">April 2024 - July 2024</div>
+            </div>
+            <div class="experience-item">
+                <h3>Hy-Vee</h3>
+                <div class="position">Cashier/Front End</div>
+                <div class="date">October 2022 - April 2023</div>
+            </div>
+            <div class="experience-item">
+                <h3>Fastenal</h3>
+                <div class="position">Inventory Management</div>
+                <div class="date">June 2022 - September 2022</div>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="section-title">Athletic Achievements</h2>
+            <ul>
+                <li>3x Varsity Soccer (1x Team Captain)</li>
+                <li>2x Varsity Tennis</li>
+                <li>2x Varsity Track</li>
+                <li>2x USA Powerlifting State Qualifier</li>
+                <li>1x USA Powerlifting Nationals Qualifier</li>
+                <li>2x Student/Athlete Recipient</li>
+                <li>5x Letter Recipient</li>
+            </ul>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="section-title">Volunteer Experience</h2>
+            <ul>
+                <li>Red Cross Blood Donor</li>
+                <li>Youth Leader at First Free Church</li>
+                <li>Rotary Lights Operation/Maintenance</li>
+                <li>TOP Soccer Volunteer/Coach</li>
+            </ul>
+        </div>
+
+        <div class="resume-section" style="text-align: center; background: rgba(36, 36, 36, 0.9); border: 2px solid rgba(128, 0, 0, 0.5);">
+            <h2 class="section-title" style="text-align: center; color: #8ba3ff;">Download Resume</h2>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                <a href="./media/resume (3).pdf" target="_blank" style="display: inline-block; padding: 12px 24px; background: linear-gradient(145deg, #8ba3ff, #4a5fff); color: #FFFDD0 !important; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; text-decoration: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    📄 View Resume (PDF)
+                </a>
+                <a href="./media/resume (3).pdf" download="Will_Drazkowski_Resume.pdf" style="display: inline-block; padding: 12px 24px; background: linear-gradient(145deg, #800000, #660000); color: #FFFDD0 !important; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; text-decoration: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    ⬇️ Download Resume (PDF)
+                </a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">Click "View" to open in browser or "Download" to save to your device</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Will Drazkowski. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

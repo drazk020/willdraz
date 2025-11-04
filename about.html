@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* About page modern styling overrides */
+        .timeline-section, .interests-section, .research-section {
+            margin: 2rem 0;
+        }
+
+        .timeline-content, .research-content {
+            padding: 1rem 0;
+        }
+
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem 0;
+        }
+
+        .interest-item {
+            padding: 1rem;
+            border-left: 3px solid var(--primary-color);
+            margin: 1rem 0;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .research-area {
+            margin: 1.5rem 0;
+            padding: 0.5rem;
+        }
+
+        .feature-card h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .feature-card h3 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            margin: 1rem 0;
+        }
+
+        .timeline-section .feature-card {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-section .feature-card::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -2rem;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 2rem;
+            background: var(--border-color);
+            display: none;
+        }
+
+        .timeline-section .feature-card:last-child::after {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-section .feature-card::after {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="career-interests.html">Career Interests</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="interactive-game.html">Interactive Game</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Navigation styles moved to main style.css -->
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>About Me</h1>
+            <p>My Journey Through Life</p>
+        </section>
+
+        <section class="media-section">
+            <h2 class="section-title">Personal Journey</h2>
+            <div class="media-grid">
+                <div class="media-item">
+                    <div class="media-placeholder">
+                        <img src="./media/profilephoto.jpg" alt="Will Drazkowski Profile Photo" class="media-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%;">
+                    </div>
+                    <div class="media-content">
+                        <h3 class="media-title">Will Drazkowski</h3>
+                        <p class="media-description">Student at University of Minnesota-Duluth</p>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <div class="media-placeholder">
+                        <img src="./media/academic.jpeg" alt="Academic Achievements" class="media-image" style="width: 100%; height: 100%; object-fit: contain; object-position: center center;">
+                    </div>
+                    <div class="media-content">
+                        <h3 class="media-title">Academic Journey</h3>
+                        <p class="media-description">Financial Markets Major with strong academic record</p>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <div class="media-placeholder">
+                        <img src="./media/active.jpeg" alt="Beyond Academics Activities" class="media-image" style="width: 100%; height: 100%; object-fit: contain; object-position: center center;">
+                    </div>
+                    <div class="media-content">
+                        <h3 class="media-title">Beyond Academics</h3>
+                        <p class="media-description">Sports, volunteering, and leadership activities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="timeline-section">
+                <div class="feature-card">
+                    <h2>Early Life</h2>
+                    <div class="timeline-content">
+                        <p>Born in Minneapolis, Minnesota, I developed an early passion for both technology and finance. Growing up with a Dad who actively invested, he took me under his wing to learn how to passively invest. I was exposed to business concepts from an early age. My fascination with computers began when I build my first PC at age 13, sparking what would become a lifelong interest in technology and its applications in business.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <h2>High School Years</h2>
+                    <div class="timeline-content">
+                        <p>During high school at Onalaska High, I excelled academically while actively participating in the Future Business Leaders of America (FBLA) and founded the Investment Club at my school. As captain of the soccer team, I developed strong analytical and public speaking skills. These experiences solidified my interest in pursuing a dual major in Finance and Mathematics.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <h2>Present Day</h2>
+                    <div class="timeline-content">
+                        <p>Currently in my second year at the University of Minnesota Duluth, I'm maintaining a 3.5 GPA while working in sales and operating a business on behalf of my parents. I specialize in developing financial analysis tools and implementing enterprise systems. Recently, I led a successful project that automated financial reporting processes, reducing processing time by 60%. My unique blend of financial acumen and technical expertise positions me well for a career at the intersection of finance and technology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interests-section">
+                <div class="feature-card">
+                    <h2>Personal Interests</h2>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <h3>Hobbies</h3>
+                            <p>I'm an avid programmer who enjoys building financial analysis tools in Python. In my free time, I contribute to open-source projects and participate in hackathons. I also enjoy chess and am currently rated 1800+ on chess.com.</p>
+                        </div>
+                        <div class="interest-item">
+                            <h3>Sports & Fitness</h3>
+                            <p>An active tennis player and runner, I participate in local tennis tournaments and have completed three half-marathons. I practice yoga three times a week and enjoy hiking in Minnesota's state parks.</p>
+                        </div>
+                        <div class="interest-item">
+                            <h3>Arts & Culture</h3>
+                            <p>I'm a classical music enthusiast with a particular interest in piano compositions. I regularly attend performances at the Minnesota Orchestra and enjoy reading financial literature and technology publications. My favorite authors include Michael Lewis and Walter Isaacson.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-section">
+                <div class="feature-card">
+                    <h2>Individual Research</h2>
+                    <div class="research-content">
+                        <div class="research-area">
+                            <h3>Current Research</h3>
+                            <p>I'm currently researching the application of machine learning algorithms in financial risk assessment. My work focuses on developing predictive models for market volatility using Python and TensorFlow, incorporating both traditional financial metrics and alternative data sources.</p>
+                        </div>
+                        <div class="research-area">
+                            <h3>Publications & Presentations</h3>
+                            <p>Co-authored a paper on "Machine Learning Applications in Modern Portfolio Theory" presented at the 2024 Undergraduate Research Symposium. Recently presented findings on automated trading algorithms at the Minnesota Finance Conference. Collaborating with faculty on a forthcoming paper about AI-driven risk management systems.</p>
+                        </div>
+                        <div class="research-area">
+                            <h3>Future Directions</h3>
+                            <p>I'm particularly interested in exploring the intersection of blockchain technology and traditional financial systems. Future research will focus on developing decentralized finance (DeFi) applications and studying their impact on traditional banking systems. I'm also keen to investigate the role of quantum computing in financial modeling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
